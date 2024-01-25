@@ -21,10 +21,10 @@
   </head>
 
   <body
-    class="relative maxarea h-[unset] mx-auto lg:max-w-[110ch] md:border-x-2 border-dashed bg-neutralBg border-onNeutralBg fade-transition"
+    class="relative maxarea h-[unset] mx-auto min-h-[100lvh] lg:max-w-[110ch] md:border-x-2 border-dashed bg-neutralBg border-onNeutralBg fade-transition"
   >
     <div
-      class="relative flex flex-col justify-start items-center maxarea h-[unset] bg-primaryBg fade-transition"
+      class="relative flex flex-col justify-start gap-3 items-center min-h-[100lvh] bg-primaryBg fade-transition"
     >
       <div
         id="top"
@@ -67,7 +67,7 @@
       </div>
       <div
         id="article"
-        class="relative block box-border mt-10 prose prose-default max-w-[90ch]"
+        class="relative grow block box-border mt-10 min-h-full prose prose-default max-w-[90ch]"
       >
         {{{html_content}}}
       </div>
