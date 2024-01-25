@@ -52,7 +52,7 @@ async fn blog_md_handler(name: Path<String>) -> axum::response::Result<Html<Stri
     let markdown = markdown_static_files()
         .get(name.as_str())
         .map(|resource| String::from_utf8_lossy(resource.data))
-        .unwrap_or("#404 File Not Found".into());
+        .unwrap_or("# 404 File Not Found".into());
     let markdown_to_html = comrak::markdown_to_html(&markdown, &Options::default());
 
     let blog_page = web_static_files()
