@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="svg2"
+   width="684.70569"
+   height="685.37402"
+   viewBox="0 0 684.70569 685.37402"
+   sodipodi:docname="telegram-logo-970.svg"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="998"
+     id="namedview4"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:pagecheckerboard="true"
+     inkscape:zoom="0.59928571"
+     inkscape:cx="470.81569"
+     inkscape:cy="395.24178"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g10" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Image"
+     id="g10"
+     transform="translate(-15.450663,-11.027165)">
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.971411"
+       d="M 339.37634,21.997141 C 304.64157,26.557841 271.4125,30.61494 238.34954,43.446898 144.11098,80.021513 71.928485,157.94776 40.609594,253.75224 -2.9928918,387.13288 48.802478,541.54647 162.57944,623.282 c 40.74391,29.2696 87.74469,48.73281 136.96903,57.37059 29.68633,5.20872 61.22612,8.03358 91.31268,4.12559 44.98218,-5.84304 88.17017,-18.15471 128.22632,-39.92404 C 613.87584,593.34018 678.69715,492.83896 688.91931,385.86421 705.04669,217.09214 584.85394,54.460957 416.11785,27.097847 391.23805,23.063236 364.69716,18.672495 339.37634,21.997141 M 472.45972,224.92561 c 23.44113,-3.83028 33.20478,16.5373 27.02272,36.59793 -11.20135,36.34633 -25.54714,72.04862 -38.44847,107.82667 -13.13834,36.43668 -24.1998,73.91373 -38.79138,109.7695 -7.645,18.78516 -12.1543,61.54763 -36.2385,65.62562 -17.80014,3.01332 -29.35508,-14.49638 -35.73726,-28.71198 -9.29738,-20.70758 -20.26072,-40.87796 -30.39643,-61.19892 -5.04163,-10.10754 -9.11865,-22.52315 -16.752,-30.99483 -7.44393,-8.26186 -19.95473,-12.26407 -29.79804,-16.91422 -19.18733,-9.06521 -38.51064,-18.2907 -57.31328,-28.14956 -15.77379,-8.2706 -41.20242,-19.69828 -34.34038,-42.4536 3.3203,-11.01095 13.00429,-14.82471 22.68344,-18.34802 15.18219,-5.52733 30.51203,-10.5709 45.65634,-16.21091 48.726,-18.14403 98.4681,-34.18883 147.65455,-51.14676 24.05506,-8.29391 49.66147,-21.58379 74.79869,-25.69092 z"
+       id="path841" />
+  </g>
+</svg>

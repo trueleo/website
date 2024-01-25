@@ -1,0 +1,25 @@
+[package]
+name = "site"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = "0.7.4"
+comrak = { version = "0.20.0", features = [
+    "emojis",
+    "arbitrary",
+    "shortcodes",
+] }
+handlebars = "5.1.1"
+serde = "1.0.195"
+static-files = "0.2.3"
+tokio = { version = "1.35.1", features = ["rt", "macros", "net"] }
+tower-http = { version = "0.5.1", features = ["cors"] }
+
+[build-dependencies]
+cargo_toml = "0.18.0"
+static-files = "0.2.3"
+
+[package.metadata.assets]
+root = "./web"
+mdfiles = "./blog"

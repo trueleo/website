@@ -1,0 +1,198 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Barcode+39&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+Themes & Color Schemes
+*/
+
+.theme-dark {
+  --navigationBg: rgb(0, 43, 43);
+  --navigationText: rgb(255, 255, 255);
+  --neutralBg: rgb(1, 13, 16);
+  --onNeutralBg: rgb(255, 255, 255);
+  --primaryBg: rgb(1, 18, 22);
+  --onPrimaryBg: rgb(0, 43, 43);
+  --textColor: rgb(248, 247, 247);
+}
+
+.theme-white {
+  --navigationBg: rgb(0, 20, 26);
+  --navigationText: rgb(251, 254, 255);
+  --neutralBg: rgb(72, 219, 183);
+  --onNeutralBg: rgb(2, 94, 51);
+  --primaryBg: rgb(230, 255, 253);
+  --onPrimaryBg: rgb(0, 0, 0);
+  --textColor: rgb(32, 27, 27);
+}
+
+/* 
+  Markdown theme
+*/
+
+.markdown-dark {
+  --prose-body: white;
+  --prose-headings: white;
+  --prose-lead: white;
+  --prose-links: white;
+  --prose-bold: white;
+  --prose-counters: white;
+  --prose-bullets: white;
+  --prose-hr: white;
+  --prose-quotes: white;
+  --prose-quote-borders: white;
+  --prose-captions: white;
+  --prose-code: white;
+  --prose-pre-code: white;
+  --prose-pre-bg: rgb(29, 29, 29);
+  --prose-th-borders: white;
+  --prose-td-borders: white;
+}
+
+.markdown-white {
+  --prose-body: black;
+  --prose-headings: black;
+  --prose-lead: black;
+  --prose-links: black;
+  --prose-bold: black;
+  --prose-counters: black;
+  --prose-bullets: black;
+  --prose-hr: black;
+  --prose-quotes: black;
+  --prose-quote-borders: black;
+  --prose-captions: black;
+  --prose-code: black;
+  --prose-pre-code: rgb(231, 231, 231);
+  --prose-pre-bg: rgb(34, 34, 34);
+  --prose-th-borders: black;
+  --prose-td-borders: black;
+}
+
+/* transition class */
+.fade-transition {
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}
+
+:root {
+  font-family: "Poppins", Georgia, "Times New Roman", Times, serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@layer components {
+  .maxarea {
+    margin: 0;
+    padding: 0;
+    height: 100svh;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+.navigation {
+  text-decoration: none;
+  @apply cursor-pointer rounded-full px-3 py-2 bg-navigationBg text-navigationText fade-transition;
+}
+
+.snap-scroll {
+  @apply overflow-y-scroll scroll-smooth snap-y snap-mandatory overscroll-y-contain;
+}
+
+.snap-scroll > * {
+  @apply snap-always snap-center;
+}
+
+#home img {
+  box-shadow: -3em 0 var(--onPrimaryBg);
+  box-sizing: border-box;
+  margin-left: 3em;
+  border-color: var(--neutralBg);
+}
+
+#home .barcode {
+  font-family: "Libre Barcode 39";
+}
+
+#about .skill ul {
+  list-style: none;
+}
+
+#about .skill li {
+  border-radius: 9999px;
+  width: fit-content;
+  background-color: var(--navigationBg);
+  color: var(--navigationText);
+  padding: 0.6em 1.2em;
+  display: inline-block;
+}
+
+#about .planet {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: rgb(22, 28, 39);
+  border-width: 2px;
+  border-style: dashed;
+  border-color: var(--back-color);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.planet img {
+  position: absolute;
+  top: 50%;
+}
+
+#contact #contact-holder {
+  z-index: 2;
+}
+
+#contact .contact {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  margin-bottom: 1.5em;
+}
+
+#contact .contact img {
+  width: 3em;
+  display: inline-block;
+  filter: invert();
+  margin-right: 1em;
+}
+
+.theme-dark #contact .contact img {
+  filter: unset;
+}
+
+.cardlink {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.footer {
+  background-image: url(./public/footer.svg);
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+  filter: invert(1);
+}
+
+.theme-dark .footer {
+  filter: unset;
+}
